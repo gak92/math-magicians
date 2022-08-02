@@ -1,3 +1,32 @@
 .App {
   text-align: center;
 }
+
+.calc-container {
+  display: grid;
+  grid-template-columns: repeat(4, 7rem);
+  grid-template-rows: repeat(6, 5rem);
+}
+
+.result-div {
+  background-color: #858694;
+  color: #fff;
+  grid-column: 1 / span 4;
+  text-align: right;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+}
+
+.btn-calc {
+  outline: none;
+  border: 1px solid #bebebe;
+  background-color: #e0e0e0;
+}
+
+.btn-orange {
+  background-color: #ec903c;
+}
+
+.btn-zero {
+  grid-column: 1 / span 2;
+}

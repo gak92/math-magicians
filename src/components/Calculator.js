@@ -1,36 +1,49 @@
 import React from 'react';
 import Button from './Button';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+
+    this.calculateOutput = this.calculateOutput.bind(this);
+  }
+
+  calculateOutput(e) {
+    const res = calculate(this.state, e.target.innerText);
+    this.setState(res);
   }
 
   render() {
+    const output = `${this.state.total || ''}${this.state.operation || ''}${this.state.next || ''}`;
     return (
       <div className="calc-container">
-        <div className="result-div">0</div>
-        <Button btnClass="btn-calc" btnValue="AC" />
-        <Button btnClass="btn-calc" btnValue="+/-" />
-        <Button btnClass="btn-calc" btnValue="%" />
-        <Button btnClass="btn-calc btn-orange" btnValue="÷" />
-        <Button btnClass="btn-calc" btnValue="7" />
-        <Button btnClass="btn-calc" btnValue="8" />
-        <Button btnClass="btn-calc" btnValue="9" />
-        <Button btnClass="btn-calc btn-orange" btnValue="x" />
-        <Button btnClass="btn-calc" btnValue="4" />
-        <Button btnClass="btn-calc" btnValue="5" />
-        <Button btnClass="btn-calc" btnValue="6" />
-        <Button btnClass="btn-calc btn-orange" btnValue="-" />
-        <Button btnClass="btn-calc" btnValue="1" />
-        <Button btnClass="btn-calc" btnValue="2" />
-        <Button btnClass="btn-calc" btnValue="3" />
-        <Button btnClass="btn-calc btn-orange" btnValue="+" />
-        <Button btnClass="btn-calc btn-zero" btnValue="0" />
-        <Button btnClass="btn-calc" btnValue="." />
-        <Button btnClass="btn-calc btn-orange" btnValue="=" />
+        <div className="result-div">{output}</div>
+        <Button btnClass="btn-calc" btnValue="AC" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="+/-" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="%" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-orange" btnValue="÷" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="7" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="8" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="9" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-orange" btnValue="x" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="4" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="5" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="6" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-orange" btnValue="-" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="1" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="2" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="3" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-orange" btnValue="+" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-zero" btnValue="0" btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc" btnValue="." btnClickHandler={this.calculateOutput}/>
+        <Button btnClass="btn-calc btn-orange" btnValue="=" btnClickHandler={this.calculateOutput}/>
       </div>
     );
   }

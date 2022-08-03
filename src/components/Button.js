@@ -9,15 +9,16 @@ class Button extends React.Component {
   }
 
   render() {
-    const { btnClass, btnValue } = this.props;
+    const { btnClass, btnClickHandler, btnValue } = this.props;
     return (
-      <button type="button" className={btnClass}>{btnValue}</button>
+      <button type="button" className={btnClass} onClick={btnClickHandler}>{btnValue}</button>
     );
   }
 }
 
 Button.propTypes = {
   btnClass: PropTypes.string.isRequired,
+  btnClickHandler: PropTypes.func.isRequired,
   btnValue: PropTypes.string.isRequired,
 };
 

@@ -16,12 +16,14 @@ class Calculator extends React.Component {
   }
 
   calculateOutput(e) {
-    const res = calculate(this.state, e.target.innerText);
+    const btnName = e.target.innerText;
+    const res = calculate(this.state, btnName);
     this.setState(res);
   }
 
   render() {
-    const output = `${this.state.total || ''}${this.state.operation || ''}${this.state.next || ''}`;
+    const {total, next, operation} = this.state;
+    const output = `${total || ''}${operation || ''}${next || ''}`;
     return (
       <div className="calc-container">
         <div className="result-div">{output}</div>

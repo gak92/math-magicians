@@ -23,8 +23,24 @@
   background-color: #e0e0e0;
 }
 
+.btn-calc:hover {
+  background-color: #c9c9c9;
+}
+
+.btn-calc:active {
+  border: 1px solid #c9c9c9;
+}
+
 .btn-orange {
   background-color: #ec903c;
+}
+
+.btn-orange:hover {
+  background-color: #e07714;
+}
+
+.btn-orange:active {
+  border: 1px solid #e07714;
 }
 
 .btn-zero {

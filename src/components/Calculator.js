@@ -48,7 +48,7 @@ class Calculator extends React.Component {
 
     return (
       <div className="calc-container">
-        <div className="result-div">{output}</div>
+        <div className="result-div">{output || '0'}</div>
         {
           btns.map((btn) => (
             <Button

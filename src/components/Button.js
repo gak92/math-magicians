@@ -6,7 +6,7 @@ const Button = (props) => {
   return (
     <button type="button" className={btnClass} onClick={btnClickHandler}>{btnValue}</button>
   );
-}
+};
 
 Button.propTypes = {
   btnClass: PropTypes.string.isRequired,

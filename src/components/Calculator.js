@@ -42,8 +42,8 @@ const Calculator = () => {
   ];
 
   return (
-    <div className='calc-main'>
-      <h2>Let's do some math</h2>
+    <div className="calc-main">
+      <h2>Let&apos;s do some math</h2>
       <div className="calc-container">
         <div className="result-div">{output || '0'}</div>
         {

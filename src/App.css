@@ -1,3 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.navbar {
+  background-color: #8fb7b0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 3rem;
+  padding: 0 4rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+#logo {
+  color: #e6efee;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#logo:hover {
+  color: #182523;
+}
+
+.navlist {
+  display: flex;
+  gap: 3rem;
+}
+
+.navitem {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #e6efee;
+  font-weight: 600;
+}
+
+.navitem:hover {
+  color: #182523;
+}
+
 .calc-container {
   display: grid;
   grid-template-columns: repeat(4, 7rem);

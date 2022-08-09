@@ -49,6 +49,31 @@ ul li {
   color: #182523;
 }
 
+.home-main {
+  color: #182523;
+  max-width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-main h2 {
+  font-size: 3rem;
+}
+
+.home-main ul {
+  align-self: flex-start;
+  padding-left: 12rem;
+}
+
+.home-main ul li {
+  list-style-type: square;
+}
+
 .calc-container {
   display: grid;
   grid-template-columns: repeat(4, 7rem);

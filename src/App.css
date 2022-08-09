@@ -74,6 +74,22 @@ ul li {
   list-style-type: square;
 }
 
+.calc-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.calc-main h2 {
+  align-self: flex-start;
+  padding-top: 4rem;
+  font-size: 2rem;
+  color: #182523;
+}
+
 .calc-container {
   display: grid;
   grid-template-columns: repeat(4, 7rem);

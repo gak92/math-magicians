@@ -42,18 +42,21 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calc-container">
-      <div className="result-div">{output || '0'}</div>
-      {
-        btns.map((btn) => (
-          <Button
-            btnClass={btn.class}
-            btnClickHandler={calculateOutput}
-            btnValue={btn.value}
-            key={btn.value}
-          />
-        ))
-      }
+    <div className='calc-main'>
+      <h2>Let's do some math</h2>
+      <div className="calc-container">
+        <div className="result-div">{output || '0'}</div>
+        {
+          btns.map((btn) => (
+            <Button
+              btnClass={btn.class}
+              btnClickHandler={calculateOutput}
+              btnValue={btn.value}
+              key={btn.value}
+            />
+          ))
+        }
+      </div>
     </div>
   );
 };

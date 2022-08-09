@@ -2,18 +2,18 @@ import React from "react";
 
 const Quote = () => {
   return (
-    <div>
+    <div className="quote-main">
       <p>
       Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.
-      (William Paul Thurston)
+      <span>— William Paul Thurston</span>
       </p>
       <p>
       Pure mathematics is, in its way, the poetry of logical ideas.
-      — Albert Einstein
+      <span>— Albert Einstein</span>
       </p>
       <p>
       Mathematics is the most beautiful and most powerful creation of the human spirit.
-      — Stefan Banach
+      <span>— Stefan Banach</span>
       </p>
     </div>
   );

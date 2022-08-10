@@ -1,6 +1,10 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Calculator from './components/Calculator';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Quote from './components/Quote';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,8 +16,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Math Magicians</h1>
-        <Calculator />
+        <Navbar />
+        <Routes>
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     );
   }

@@ -51,6 +51,12 @@ Deploy onto the web using GitHub Pages
 - GitHub: [@gak92](https://github.com/gak92)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
+👤 **Samuel Ackon**
+
+- GitHub: [@AckonSamuel](https://github.com/AckonSamuel)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ackon-882717190/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

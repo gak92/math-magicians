@@ -15,6 +15,6 @@ it('Quote user interaction', () => {
       <Quote />
     </BrowserRouter>,
   );
-  const Element = screen.getByText('- William Paul Thurston');
+  const Element = screen.getByText('Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.');
   expect(Element).toBeInTheDocument();
 });

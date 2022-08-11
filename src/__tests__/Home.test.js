@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom'
-import { BrowserRouter } from 'react-router-dom'
-import Home from '../components/Home'
+import '@testing-library/jest-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Home from '../components/Home';
 
 it('Home renders correctly', () => {
   const tree = render(<Home />);
@@ -12,8 +12,8 @@ it('Home renders correctly', () => {
 it('Home user interaction', () => {
   render(
     <BrowserRouter>
-    <Home />
-    </BrowserRouter>
+      <Home />
+    </BrowserRouter>,
   );
   const Element = screen.getByText('Welcome to our page');
   expect(Element).toBeInTheDocument();

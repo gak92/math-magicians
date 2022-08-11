@@ -17,7 +17,8 @@
 
 ## Live Demo
 
-[Live Demo Link coming soon...](#)
+[Heroku Live Demo](https://gak92-math-magician.herokuapp.com/)
+[Netlify Live Demo](https://gak92-math-magician.netlify.app/)
 
 ## Getting Started
 
@@ -55,7 +56,6 @@ Deploy onto the web using GitHub Pages
 
 - GitHub: [@AckonSamuel](https://github.com/AckonSamuel)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ackon-882717190/)
-
 
 ## 🤝 Contributing
 
